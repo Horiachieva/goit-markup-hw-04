@@ -89,6 +89,8 @@ header .container {
   color: #2e2f42;
   display: block;
   padding: 24px 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover {
@@ -97,6 +99,20 @@ header .container {
 
 .navigation-link:focus {
   color: #404bbf;
+}
+
+.navigation-item {
+  position: relative;
+}
+
+.navigation-now::after {
+  content: ' ';
+  width: 100%;
+  height: 4px;
+  background: #404bbf;
+  display: block;
+  position: absolute;
+  top: 100%;
 }
 
 .navigation-address {
@@ -133,6 +149,8 @@ header .container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-address-link:hover {
@@ -185,6 +203,8 @@ header .container {
   height: 56px;
   border: none;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-headline-button:hover {
@@ -290,10 +310,13 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-details-link {
   position: relative;
+  padding: 12px;
 }
 
 .contact {
@@ -321,6 +344,13 @@ header .container {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   width: calc((100% - 48px) / 3);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-subtitle-and-text {
@@ -383,4 +413,8 @@ header .container {
 
 .footer-logo-text {
   margin-right: 120px;
+}
+
+.contact-footer:hover {
+  background-color: #31d0aa;
 }
