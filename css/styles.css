@@ -459,3 +459,7 @@ header .container {
 .contact-footer:hover {
   background-color: #31d0aa;
 }
+
+.contact-footer:focus {
+  background-color: #31d0aa;
+}
